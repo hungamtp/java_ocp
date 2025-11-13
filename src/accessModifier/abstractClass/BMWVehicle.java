@@ -7,6 +7,11 @@ public abstract class BMWVehicle {
     private static String BRAND = "BMW";
     private static String COMPANY = "BMW1";
     public static String GROUP = "BGroup";
+    public static int ACCESS_COUNT = 0;
+    private static int PRIVATE_ACCESS_COUNT = 0;
+    public BMWVehicle() {
+        ACCESS_COUNT++;
+    }
     static String COUNTRY = "Con";
 
     protected void run() {
@@ -34,5 +39,9 @@ public abstract class BMWVehicle {
     @org.jetbrains.annotations.Contract(pure = true)
     private String demo() {
         return "null";
+    }
+
+    public void countAccessCount(){
+        PRIVATE_ACCESS_COUNT++;
     }
 }

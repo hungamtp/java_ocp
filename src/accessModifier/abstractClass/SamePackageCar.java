@@ -1,8 +1,12 @@
 package accessModifier.abstractClass;
 
 public class SamePackageCar extends BMWVehicleWithDefaultFunction{
+
+    public SamePackageCar() {
+        super();
+    }
     @Override
-    private void start() {
+    public void start() {
 
     }
 

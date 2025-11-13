@@ -1,6 +1,9 @@
 package accessModifier.abstractClass;
 
 public abstract class BMWVehicleWithDefaultFunction {
+    public BMWVehicleWithDefaultFunction(){
+
+    }
     // only accessed by public function ex: getter(), setter()
     private String name;
     private String engine;
@@ -28,5 +31,8 @@ public abstract class BMWVehicleWithDefaultFunction {
 
     public String getGroup() {
         return GROUP;
+    }
+    private String privateFunction(){
+        return "1";
     }
 }
