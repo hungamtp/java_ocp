@@ -1,6 +1,6 @@
 package accessModifier.abstractClass;
 
-public abstract class BMWVehicle {
+public abstract class BMWVehicleWithDefaultFunction {
     // only accessed by public function ex: getter(), setter()
     private String name;
     private String engine;
@@ -16,7 +16,7 @@ public abstract class BMWVehicle {
     protected abstract void start();
 
     public abstract void stop();
-
+    abstract void fixEngine();
 
     public String getBrand() {
         return BRAND;
@@ -28,11 +28,5 @@ public abstract class BMWVehicle {
 
     public String getGroup() {
         return GROUP;
-    }
-
-    @org.jetbrains.annotations.NotNull
-    @org.jetbrains.annotations.Contract(pure = true)
-    private String demo() {
-        return "null";
     }
 }
