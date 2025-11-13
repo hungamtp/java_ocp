@@ -17,6 +17,13 @@ public class HString {
         String s1 = "John Wayne";
         String s2 = "John" + " " + "Wayne"; // run-time StringPool understand there is John Wayne in the StringPool
         System.out.println(s1 == s2); // true
+        String x = null;
+        System.out.println(x);
+
+
+
+    }
+    private void change(int val) {
 
     }
 }

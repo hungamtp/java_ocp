@@ -20,6 +20,7 @@ public class HArray {
     }
 
     public static int search(int[] arr, int key) {
+        // works only when the arr was sorted
         return Arrays.binarySearch(arr,  key);
     }
 }
